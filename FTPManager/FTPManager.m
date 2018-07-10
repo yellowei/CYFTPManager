@@ -189,6 +189,60 @@
     return [attrib fileSize];
 }
 
+- (NSDictionary *)_entryByReencodingNameInEntry:(NSDictionary *)entry encoding:(NSStringEncoding)newEncoding
+// CFFTPCreateParsedResourceListing always interprets the file name as MacRoman,
+// which is clearly bogus <rdar://problem/7420589>.  This code attempts to fix
+// that by converting the Unicode name back to MacRoman (to get the original bytes;
+// this works because there's a lossless round trip between MacRoman and Unicode)
+// and then reconverting those bytes to Unicode using the encoding provided.
+{
+    NSDictionary *  result;
+    NSString *      name;
+    NSData *        nameData;
+    NSString *      newName;
+    
+    newName = nil;
+    
+    // Try to get the name, convert it back to MacRoman, and then reconvert it
+    // with the preferred encoding.
+    
+    name = [entry objectForKey:(id) kCFFTPResourceName];
+    if (name != nil) {
+        assert([name isKindOfClass:[NSString class]]);
+        
+        nameData = [name dataUsingEncoding:NSMacOSRomanStringEncoding];
+        if (nameData != nil) {
+            newName = [[NSString alloc] initWithData:nameData encoding:newEncoding];
+        }
+    }
+    NSLog(@"name is %@",name);
+    
+    NSLog(@"newname is %@",newName);
+    
+    
+    // If the above failed, just return the entry unmodified.  If it succeeded,
+    // make a copy of the entry and replace the name with the new name that we
+    // calculated.
+    
+    if (newName == nil) {
+        assert(NO);                 // in the debug builds, if this fails, we should investigate why
+        result = (NSDictionary *) entry;
+    } else {
+        NSMutableDictionary *   newEntry;
+        
+        newEntry = [entry mutableCopy];
+        assert(newEntry != nil);
+        
+        [newEntry setObject:newName forKey:(id) kCFFTPResourceName];
+        
+        result = newEntry;
+    }
+    
+    return result;
+}
+
+
+
 - (NSArray*) _createListingArrayFromDirectoryListingData:(NSMutableData*)data {
     NSMutableArray* listingArray = [NSMutableArray array];
     
@@ -200,14 +254,10 @@
                                                          self.directoryListingData.length - offset, &thisEntry);
         if (bytesConsumed > 0) {
             if (thisEntry != NULL) {
-                NSMutableDictionary *entry = [NSMutableDictionary dictionaryWithDictionary:(__bridge NSDictionary *)thisEntry];
                 
-                // Converting kCFFTPResourceName entry to UTF8 to fix errors with Non-ASCII chars
-                NSString *nameEntry;
-                if ((nameEntry = entry[(id)kCFFTPResourceName])) {
-                    entry[(id)kCFFTPResourceName] = [[NSString alloc] initWithData:[nameEntry dataUsingEncoding:NSMacOSRomanStringEncoding allowLossyConversion:YES]
-                                                                          encoding:NSUTF8StringEncoding];
-                }
+                NSStringEncoding gbkEncoding = CFStringConvertEncodingToNSStringEncoding                (kCFStringEncodingGB_18030_2000);
+                
+                NSDictionary * entry = [self _entryByReencodingNameInEntry:(__bridge NSDictionary *)thisEntry encoding:gbkEncoding];
                 
                 [listingArray addObject:entry];
             }
