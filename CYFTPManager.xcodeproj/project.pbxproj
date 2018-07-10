@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ECDFC9F20F48D450056DA84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDFC9E20F48D450056DA84 /* AppDelegate.m */; };
+		0ECDFCA220F48D450056DA84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDFCA120F48D450056DA84 /* ViewController.m */; };
+		0ECDFCA520F48D450056DA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECDFCA320F48D450056DA84 /* Main.storyboard */; };
+		0ECDFCA720F48D450056DA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ECDFCA620F48D450056DA84 /* Assets.xcassets */; };
+		0ECDFCAA20F48D450056DA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECDFCA820F48D450056DA84 /* LaunchScreen.storyboard */; };
+		0ECDFCAD20F48D450056DA84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDFCAC20F48D450056DA84 /* main.m */; };
+		0ECDFCB320F48D870056DA84 /* CYFTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDFCB220F48D870056DA84 /* CYFTPManager.m */; };
 		3611DAD0158253A60069C894 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3611DACF158253A60069C894 /* Cocoa.framework */; };
 		3611DADA158253A60069C894 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3611DAD8158253A60069C894 /* InfoPlist.strings */; };
 		3611DADC158253A60069C894 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3611DADB158253A60069C894 /* main.m */; };
@@ -19,6 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ECDFC9B20F48D450056DA84 /* NSURLSessionFTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLSessionFTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECDFC9D20F48D450056DA84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0ECDFC9E20F48D450056DA84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0ECDFCA020F48D450056DA84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0ECDFCA120F48D450056DA84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0ECDFCA420F48D450056DA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ECDFCA620F48D450056DA84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ECDFCA920F48D450056DA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ECDFCAB20F48D450056DA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ECDFCAC20F48D450056DA84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0ECDFCB120F48D870056DA84 /* CYFTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFTPManager.h; sourceTree = "<group>"; };
+		0ECDFCB220F48D870056DA84 /* CYFTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFTPManager.m; sourceTree = "<group>"; };
 		3611DACB158253A60069C894 /* CYFTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYFTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611DACF158253A60069C894 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3611DAD2158253A60069C894 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -40,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0ECDFC9820F48D450056DA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3611DAC8158253A60069C894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +78,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ECDFC9C20F48D450056DA84 /* NSURLSessionFTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				0ECDFC9D20F48D450056DA84 /* AppDelegate.h */,
+				0ECDFC9E20F48D450056DA84 /* AppDelegate.m */,
+				0ECDFCB120F48D870056DA84 /* CYFTPManager.h */,
+				0ECDFCB220F48D870056DA84 /* CYFTPManager.m */,
+				0ECDFCA020F48D450056DA84 /* ViewController.h */,
+				0ECDFCA120F48D450056DA84 /* ViewController.m */,
+				0ECDFCA320F48D450056DA84 /* Main.storyboard */,
+				0ECDFCA620F48D450056DA84 /* Assets.xcassets */,
+				0ECDFCA820F48D450056DA84 /* LaunchScreen.storyboard */,
+				0ECDFCAB20F48D450056DA84 /* Info.plist */,
+				0ECDFCAC20F48D450056DA84 /* main.m */,
+			);
+			path = NSURLSessionFTPManager;
+			sourceTree = "<group>";
+		};
 		3611DAC0158253A50069C894 = {
 			isa = PBXGroup;
 			children = (
-				3611DAD5158253A60069C894 /* CYFTPManager */,
+				3611DAD5158253A60069C894 /* CFNetworkFTPManager */,
+				0ECDFC9C20F48D450056DA84 /* NSURLSessionFTPManager */,
 				3611DACE158253A60069C894 /* Frameworks */,
 				3611DACC158253A60069C894 /* Products */,
 			);
@@ -65,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				3611DACB158253A60069C894 /* CYFTPManager.app */,
+				0ECDFC9B20F48D450056DA84 /* NSURLSessionFTPManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,19 +135,19 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		3611DAD5158253A60069C894 /* CYFTPManager */ = {
+		3611DAD5158253A60069C894 /* CFNetworkFTPManager */ = {
 			isa = PBXGroup;
 			children = (
 				3611DAE1158253A60069C894 /* AppDelegate.h */,
 				3611DAE2158253A60069C894 /* AppDelegate.m */,
-				3611DAF1158254EB0069C894 /* FTPManager.m */,
 				3611DAF3158254F10069C894 /* FTPManager.h */,
+				3611DAF1158254EB0069C894 /* FTPManager.m */,
 				362750D1161B135200270120 /* FTPMSample1.h */,
 				362750D2161B135200270120 /* FTPMSample1.m */,
 				3611DAE4158253A60069C894 /* MainMenu.xib */,
 				3611DAD6158253A60069C894 /* Supporting Files */,
 			);
-			path = CYFTPManager;
+			path = CFNetworkFTPManager;
 			sourceTree = "<group>";
 		};
 		3611DAD6158253A60069C894 /* Supporting Files */ = {
@@ -119,6 +165,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0ECDFC9A20F48D450056DA84 /* NSURLSessionFTPManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECDFCAE20F48D450056DA84 /* Build configuration list for PBXNativeTarget "NSURLSessionFTPManager" */;
+			buildPhases = (
+				0ECDFC9720F48D450056DA84 /* Sources */,
+				0ECDFC9820F48D450056DA84 /* Frameworks */,
+				0ECDFC9920F48D450056DA84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSURLSessionFTPManager;
+			productName = NSURLSessionFTPManager;
+			productReference = 0ECDFC9B20F48D450056DA84 /* NSURLSessionFTPManager.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3611DACA158253A60069C894 /* CYFTPManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3611DAE9158253A60069C894 /* Build configuration list for PBXNativeTarget "CYFTPManager" */;
@@ -144,6 +207,13 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = nkreipke;
+				TargetAttributes = {
+					0ECDFC9A20F48D450056DA84 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 3TP4665PF2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3611DAC5158253A50069C894 /* Build configuration list for PBXProject "CYFTPManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -151,6 +221,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3611DAC0158253A50069C894;
 			productRefGroup = 3611DACC158253A60069C894 /* Products */;
@@ -158,11 +229,22 @@
 			projectRoot = "";
 			targets = (
 				3611DACA158253A60069C894 /* CYFTPManager */,
+				0ECDFC9A20F48D450056DA84 /* NSURLSessionFTPManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0ECDFC9920F48D450056DA84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ECDFCAA20F48D450056DA84 /* LaunchScreen.storyboard in Resources */,
+				0ECDFCA720F48D450056DA84 /* Assets.xcassets in Resources */,
+				0ECDFCA520F48D450056DA84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3611DAC9158253A60069C894 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +258,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0ECDFC9720F48D450056DA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ECDFCA220F48D450056DA84 /* ViewController.m in Sources */,
+				0ECDFCAD20F48D450056DA84 /* main.m in Sources */,
+				0ECDFCB320F48D870056DA84 /* CYFTPManager.m in Sources */,
+				0ECDFC9F20F48D450056DA84 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3611DAC7158253A60069C894 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +283,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0ECDFCA320F48D450056DA84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ECDFCA420F48D450056DA84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0ECDFCA820F48D450056DA84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ECDFCA920F48D450056DA84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		3611DAD8158253A60069C894 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,6 +326,101 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0ECDFCAF20F48D450056DA84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3TP4665PF2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NSURLSessionFTPManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellowei.www.NSURLSessionFTPManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ECDFCB020F48D450056DA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3TP4665PF2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = NSURLSessionFTPManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellowei.www.NSURLSessionFTPManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		3611DAE7158253A60069C894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,8 +481,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CYFTPManager/CYFTPManager-Prefix.pch";
-				INFOPLIST_FILE = "CYFTPManager/CYFTPManager-Info.plist";
+				GCC_PREFIX_HEADER = "CFNetworkFTPManager/CYFTPManager-Prefix.pch";
+				INFOPLIST_FILE = "CFNetworkFTPManager/CYFTPManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -291,8 +495,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CYFTPManager/CYFTPManager-Prefix.pch";
-				INFOPLIST_FILE = "CYFTPManager/CYFTPManager-Info.plist";
+				GCC_PREFIX_HEADER = "CFNetworkFTPManager/CYFTPManager-Prefix.pch";
+				INFOPLIST_FILE = "CFNetworkFTPManager/CYFTPManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -303,6 +507,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0ECDFCAE20F48D450056DA84 /* Build configuration list for PBXNativeTarget "NSURLSessionFTPManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ECDFCAF20F48D450056DA84 /* Debug */,
+				0ECDFCB020F48D450056DA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3611DAC5158253A50069C894 /* Build configuration list for PBXProject "CYFTPManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
