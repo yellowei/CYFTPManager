@@ -19,15 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3611DACB158253A60069C894 /* FTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3611DACB158253A60069C894 /* CYFTPManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYFTPManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3611DACF158253A60069C894 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3611DAD2158253A60069C894 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3611DAD3158253A60069C894 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3611DAD4158253A60069C894 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3611DAD7158253A60069C894 /* FTPManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTPManager-Info.plist"; sourceTree = "<group>"; };
+		3611DAD7158253A60069C894 /* CYFTPManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CYFTPManager-Info.plist"; sourceTree = "<group>"; };
 		3611DAD9158253A60069C894 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3611DADB158253A60069C894 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3611DADD158253A60069C894 /* FTPManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPManager-Prefix.pch"; sourceTree = "<group>"; };
+		3611DADD158253A60069C894 /* CYFTPManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CYFTPManager-Prefix.pch"; sourceTree = "<group>"; };
 		3611DADF158253A60069C894 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3611DAE1158253A60069C894 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3611DAE2158253A60069C894 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		3611DAC0158253A50069C894 = {
 			isa = PBXGroup;
 			children = (
-				3611DAD5158253A60069C894 /* FTPManager */,
+				3611DAD5158253A60069C894 /* CYFTPManager */,
 				3611DACE158253A60069C894 /* Frameworks */,
 				3611DACC158253A60069C894 /* Products */,
 			);
@@ -64,7 +64,7 @@
 		3611DACC158253A60069C894 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3611DACB158253A60069C894 /* FTPManager.app */,
+				3611DACB158253A60069C894 /* CYFTPManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,7 +89,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		3611DAD5158253A60069C894 /* FTPManager */ = {
+		3611DAD5158253A60069C894 /* CYFTPManager */ = {
 			isa = PBXGroup;
 			children = (
 				3611DAE1158253A60069C894 /* AppDelegate.h */,
@@ -101,16 +101,16 @@
 				3611DAE4158253A60069C894 /* MainMenu.xib */,
 				3611DAD6158253A60069C894 /* Supporting Files */,
 			);
-			path = FTPManager;
+			path = CYFTPManager;
 			sourceTree = "<group>";
 		};
 		3611DAD6158253A60069C894 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3611DAD7158253A60069C894 /* FTPManager-Info.plist */,
+				3611DAD7158253A60069C894 /* CYFTPManager-Info.plist */,
 				3611DAD8158253A60069C894 /* InfoPlist.strings */,
 				3611DADB158253A60069C894 /* main.m */,
-				3611DADD158253A60069C894 /* FTPManager-Prefix.pch */,
+				3611DADD158253A60069C894 /* CYFTPManager-Prefix.pch */,
 				3611DADE158253A60069C894 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3611DACA158253A60069C894 /* FTPManager */ = {
+		3611DACA158253A60069C894 /* CYFTPManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3611DAE9158253A60069C894 /* Build configuration list for PBXNativeTarget "FTPManager" */;
+			buildConfigurationList = 3611DAE9158253A60069C894 /* Build configuration list for PBXNativeTarget "CYFTPManager" */;
 			buildPhases = (
 				3611DAC7158253A60069C894 /* Sources */,
 				3611DAC8158253A60069C894 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = FTPManager;
+			name = CYFTPManager;
 			productName = FTPManager;
-			productReference = 3611DACB158253A60069C894 /* FTPManager.app */;
+			productReference = 3611DACB158253A60069C894 /* CYFTPManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +145,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = nkreipke;
 			};
-			buildConfigurationList = 3611DAC5158253A50069C894 /* Build configuration list for PBXProject "FTPManager" */;
+			buildConfigurationList = 3611DAC5158253A50069C894 /* Build configuration list for PBXProject "CYFTPManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3611DACA158253A60069C894 /* FTPManager */,
+				3611DACA158253A60069C894 /* CYFTPManager */,
 			);
 		};
 /* End PBXProject section */
@@ -277,8 +277,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FTPManager/FTPManager-Prefix.pch";
-				INFOPLIST_FILE = "FTPManager/FTPManager-Info.plist";
+				GCC_PREFIX_HEADER = "CYFTPManager/CYFTPManager-Prefix.pch";
+				INFOPLIST_FILE = "CYFTPManager/CYFTPManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -291,8 +291,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FTPManager/FTPManager-Prefix.pch";
-				INFOPLIST_FILE = "FTPManager/FTPManager-Info.plist";
+				GCC_PREFIX_HEADER = "CYFTPManager/CYFTPManager-Prefix.pch";
+				INFOPLIST_FILE = "CYFTPManager/CYFTPManager-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3611DAC5158253A50069C894 /* Build configuration list for PBXProject "FTPManager" */ = {
+		3611DAC5158253A50069C894 /* Build configuration list for PBXProject "CYFTPManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3611DAE7158253A60069C894 /* Debug */,
@@ -312,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3611DAE9158253A60069C894 /* Build configuration list for PBXNativeTarget "FTPManager" */ = {
+		3611DAE9158253A60069C894 /* Build configuration list for PBXNativeTarget "CYFTPManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3611DAEA158253A60069C894 /* Debug */,
